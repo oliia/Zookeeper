@@ -121,5 +121,14 @@ It seems there will be more rabbits soon!"""
 
 
 animals = [camel, lion, deer, goose, bat, rabbit]
-
+num_habitat = 0
 # write your code here
+while num_habitat != 'exit':
+    str_habitat = input("""Please enter the number of the habitat you would like to view : """)
+    if str_habitat == 'exit':
+       print('See you later!')
+       break
+    animal = animals[int(str_habitat)]
+    print(animal)
+
+
